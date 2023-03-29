@@ -1,0 +1,36 @@
+<div class="calc">
+  <section id="ioSection">
+    <div id="displayResult">
+<!--      {{result}}-->
+    </div>
+    <div id="displayInput">
+      <input type="text" [value]="result">
+    </div>
+  </section>
+  <section id="keySection">
+    <div id="key-1" class="calcKey pointer" (click)="onValueKeyClick(1)">1</div>
+    <div id="key-2" class="calcKey pointer" (click)="onValueKeyClick(2)">2</div>
+    <div id="key-3" class="calcKey pointer" (click)="onValueKeyClick(3)">3</div>
+    <div id="key-4" class="calcKey pointer" (click)="onValueKeyClick(4)">4</div>
+    <div id="key-5" class="calcKey pointer" (click)="onValueKeyClick(5)">5</div>
+    <div id="key-6" class="calcKey pointer" (click)="onValueKeyClick(6)">6</div>
+    <div id="key-7" class="calcKey pointer" (click)="onValueKeyClick(7)">7</div>
+    <div id="key-8" class="calcKey pointer" (click)="onValueKeyClick(8)">8</div>
+    <div id="key-9" class="calcKey pointer" (click)="onValueKeyClick(9)">9</div>
+    <div id="key-0" class="calcKey pointer" (click)="onValueKeyClick(0)">0</div>
+    <div id="key-Dot" class="calcKey pointer" (click)="onValueKeyClick('.')">.</div>
+    <div id="key-Plus" class="calcKey pointer" (click)="onValueKeyClick('+')">+</div>
+    <div id="key-Minus" class="calcKey pointer" (click)="onValueKeyClick('-')">-</div>
+    <div id="key-Star" class="calcKey pointer" (click)="onValueKeyClick('*')">*</div>
+    <div id="key-Slash" class="calcKey pointer" (click)="onValueKeyClick('/')">/</div>
+    <div id="key-Sign" class="calcKey pointer" (click)="onFunctionKeyClick('+/-')">+/-</div>
+    <div id="key-Power" class="calcKey pointer" (click)="onFunctionKeyClick('^')">^</div>
+    <div id="key-Percent" class="calcKey pointer" (click)="onFunctionKeyClick('%')">%</div>
+    <div id="key-Root" class="calcKey pointer" (click)="onFunctionKeyClick('Sqrt')">sqrt()</div>
+    <div id="key-OpenBrace" class="calcKey pointer" (click)="onValueKeyClick('(')">(</div>
+    <div id="key-CloseBrace" class="calcKey pointer" (click)="onValueKeyClick(')')">)</div>
+    <div id="key-Backspace" class="calcKey pointer" (click)="onBackspaceKeyClick()" (dblclick)="onClearKeyClick()">Del</div>
+    <div id="key-Equal" class="calcKey pointer" (click)="onResultKeyClick()">=</div>
+    <div id="key-Clear" class="calcKey pointer" (click)="onClearKeyClick()">AC</div>
+  </section>
+</div>

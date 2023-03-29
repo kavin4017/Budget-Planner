@@ -1,0 +1,51 @@
+.node1{
+  background:green;
+  width:150px;
+  height:50px;
+  //place item in particular place
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+.node2{
+  background:blue;
+  width:150px;
+  height:50px;
+  //place item in particular place
+  position: absolute;
+  top: 20px;
+  left: 350px;
+}
+.connector{
+  //Line Size
+  height:2px;
+
+  //width calculated
+  //node2 left starting position - node1 left starting position - width of node1
+  //node2 left - node1 left - node1 width
+  width:calc(350px - 50px - 150px);
+
+  background: black;
+  position: absolute;
+
+  //top position placed
+  //node1 height mid point + node1 top starting position
+  //node1 height/2 + node1 top
+  top: calc(50px/2 + 20px);
+
+  //left position placed
+  //node1 width place + node1 left starting position
+  //node1 width + node1 left
+  left: calc(150px + 50px);
+}
+.connector:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 16px solid black;
+  border-bottom: 8px solid transparent;
+  top: calc(2px/2 - 8px);
+  left: calc((350px - 50px - 150px) - (16px - 2px));
+}

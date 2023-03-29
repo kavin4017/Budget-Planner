@@ -1,0 +1,102 @@
+.calc{
+  width: 400px;
+  background: #242632;
+  overflow: hidden;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin: 0 auto;
+  box-shadow: 0px 10px 19px rgba(49,49,49, .5);
+}
+
+#ioSection{
+  #displayResult{
+    grid-area: displayResult;
+    font-size: xxx-large;
+    min-height: 50px;
+  }
+  #displayInput{
+    grid-area: displayInput;
+
+    input{
+      min-width: 300px;
+      //clear: both;
+      padding: 20px;
+      background: #9EB3AF;
+      font-family: digital;
+      font-size: 24px;
+      border: 10px inset rgba(179, 158, 173,0.22);
+      text-align: right;
+      letter-spacing: 5px;
+      font-family: 'Ubuntu', sans-serif;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    input[type=text]:focus {
+      outline: 1px solid transparent;
+    }
+
+  }
+
+  padding: 20px;
+}
+
+#keySection{
+  #key-1{grid-area: key1}
+  #key-2{grid-area: key2}
+  #key-3{grid-area: key3}
+  #key-4{grid-area: key4}
+  #key-5{grid-area: key5}
+  #key-6{grid-area: key6}
+  #key-7{grid-area: key7}
+  #key-8{grid-area: key8}
+  #key-9{grid-area: key9}
+  #key-0{grid-area: key0}
+  #key-Dot{grid-area: keyDot}
+  #key-Plus{grid-area: keyPlus}
+  #key-Minus{grid-area: keyMinus}
+  #key-Star{grid-area: keyStar}
+  #key-Slash{grid-area: keySlash}
+  #key-Sign{grid-area: keySign}
+  #key-Percent{grid-area: keyPercent}
+  #key-Power{grid-area: keyPower}
+  #key-Root{grid-area: keyRoot}
+  #key-OpenBrace{grid-area: keyOpenBrace}
+  #key-CloseBrace{grid-area: keyCloseBrace}
+  #key-Backspace{grid-area: keyBackspace}
+  #key-Equal{grid-area: keyEqual}
+  #key-Clear{grid-area: keyClear}
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-areas: "keyClear keyOpenBrace keyCloseBrace keyBackspace" "keyPercent keyRoot keyPower keySlash"
+  "key1 key2 key3 keyPlus" "key4 key5 key6 keyMinus" "key7 key8 key9 keyStar" "keySign key0 keyDot keyEqual";
+
+  overflow: hidden;
+  padding: 20px;
+  padding-top: 0;
+  border: 15px solid #242632;
+  border-top: 0;
+  border-bottom: 0;
+  padding-bottom: 50px;
+}
+
+.calcKey{
+  background: #2C303B;
+  color: white;
+  border: 3px solid #191B21;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  min-width: 50px;
+  min-height: 30px;
+  cursor: pointer;
+  float: left;
+  border-radius: 5px;
+  outline: none;
+  border-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}

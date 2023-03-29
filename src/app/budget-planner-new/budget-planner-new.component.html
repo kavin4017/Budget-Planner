@@ -1,0 +1,38 @@
+<section id="inputPanel">
+  <h2>Income</h2>
+  <input type="text" class="incomeFeild" (change)="onIncomeChange($event)">
+</section>
+
+<section id="splliters">
+
+  <section id="mainSplitter-container" *ngIf="totalIncome > 0">
+<!--    <h3>Major Income Splitter</h3>-->
+    <div class="mainSplitter" *ngFor="let mainVal of mainSplit">
+      <span class="headName">{{mainVal.name}}</span>
+      <span class="headPercent">{{mainVal.percent}} %</span>
+      <span class="headAmount">Rs. {{mainVal.amount}}</span>
+    </div>
+  </section>
+<!--  <section id="subValSplitter-container">-->
+<!--    <h3>Sub Splitter</h3>-->
+<!--    <div class="subSplitIdentification" *ngFor="let mainVal of mainSplit; let i = index">-->
+<!--      <div class="subSplitter tableView" *ngFor="let subVal of mainVal.split" (click)="onSubSplitterChange(subVal.split)">-->
+<!--        <span class="headName">{{subVal.name}}</span>-->
+<!--        <span class="headPercent">{{subVal.percent}} %</span>-->
+<!--        <span class="headAmount">Rs. {{subVal.amount}}</span>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--  <section id="depSubValSplitter-container">-->
+<!--    <h3>Deep Sub Splitter</h3>-->
+<!--    <div class="depSubSplitter tableView" *ngFor="let depSubVal of selected">-->
+<!--      <span class="headName">{{depSubVal.name}}</span>-->
+<!--      <span class="headPercent">{{depSubVal.percent}} %</span>-->
+<!--      <span class="headAmount">Rs. {{depSubVal.amount}}</span>-->
+<!--    </div>-->
+<!--    <div class="messages" *ngIf="selected == null">-->
+<!--      Please select One Sub-Splitter Catagory-->
+<!--    </div>-->
+<!--  </section>-->
+
+</section>
